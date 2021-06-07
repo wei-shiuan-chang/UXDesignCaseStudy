@@ -1,4 +1,6 @@
-.container {
-    background-color:aquamarine;
-    height: 200px;
+.bg-image {
+  outline: 2px solid black;
+  padding: 15em;
+  background-size: 100%;
+  background-image: url("img/background/HomePageBG.jpg");
 }
