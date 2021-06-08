@@ -25,6 +25,9 @@
   opacity: 0.3;
   background-image: url("img/background/HomePageBG.jpg");
 }
+.topnav {
+  min-width: 800px;
+}
 .topnav a {
   float: left;
   color: black;
