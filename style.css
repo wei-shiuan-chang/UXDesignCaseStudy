@@ -29,7 +29,7 @@
   min-width: 800px;
 }
 .topnav a {
-  float: left;
+  float: right;
   color: black;
   text-align: center;
   padding: 14px 16px;
@@ -44,10 +44,11 @@
 
 #home-title {
   position: absolute;
-  padding-left: 16px;
-  top: 35%;
-  font-size: xxx-large;
-  float: left;
+  padding-top: 20vh;
+  width: 100%;
+  height: 100%;
+  font-size: 48px;
+  text-align: center;
 }
 .section {
   display: table-cell;
