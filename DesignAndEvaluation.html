@@ -2,9 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="propsalStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
+<div class="wrapper">
+    <div class="sidebar">
+        <!-- <img class="logo" src="img/icon/lightbulb.png" > -->
+        <ul>
+            <li class="logo"><i class="fas fa-logo"></i> <img class="logo" src="img/icon/research.png" ></li>
+            <li ><a href="#"><i class="fas fa-home"></i>Design & Evaluation</a></li>
+            <li id="user_evaluation"><a href="#"><i class="fas fa-user"></i>User Evaluation</a></li>
+            <li id="heuristic_evaluation"><a href="#"><i class="fas fa-address-card"></i>Heuristic Evaluation</a></li>
+            <li id="mockup"><a href="#"><i class="fas fa-project-diagram"></i>High-Fidelity Mockup</a></li>
+        </ul>
+
+    </div>
+    <div class="main_content">
+        <div class="topnav">
+            <a onclick="location.href='./DesignAndEvaluation.html';">Design & Evaluation</a>
+            <a onclick="location.href='./userResearchAndPersonas.html';">User Research & Personas</a>
+            <a onclick="location.href='./proposal.html';">Project Proposal</a>
+            <a onclick="location.href='./index.html';">Home</a>
+        </div>
+        <div id="header" class="header">
+            <h1>User Evaluation</h1>
+        </div>
+        <div class="info">
+            <p id="info">
+                People all go grocery shopping. The average time Americans spend on groceries is about 60 hours per year. Many shoppers want stores to share the inventory information, like availability and price. Also, grocery habits have dramatically changed since the pandemic. More and more people start shopping online than drive to the grocery store. Our group proposes to design a new system that can provide product availability, product price, and delivery service to people with a better shopping experience.
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function ChangeUser_evaluation() {
+        var pageInfo = document.getElementById("info");
+        pageInfo.textContent = "Need to update";
+        ChangeHeader("<h1>User Evaluation</h1>")
+    }
+
+    function ChangeHeuristic_evaluation() {
+        // todo
+        var pageInfo = document.getElementById("info");
+        pageInfo.textContent = "Need to update";
+        ChangeHeader("<h1>Heuristic Evaluation</h1>")
+    }
+
+
+    function ChangeMockup() {
+        // todo
+        var pageInfo = document.getElementById("info");
+        pageInfo.textContent = "Need to update";
+        ChangeHeader("<h1>High-Fidelity Mockup</h1>")
+    }
+
+    function ChangeHeader(name) {
+        var header = document.getElementById("header");
+        header.innerHTML = name
+    }
+    document.getElementById("user_evaluation").addEventListener("click", ChangeUser_evaluation);
+    document.getElementById("heuristic_evaluation").addEventListener("click", ChangeHeuristic_evaluation);
+    document.getElementById("mockup").addEventListener("click", ChangeMockup);
+
+</script>
 
 </body>
 </html>

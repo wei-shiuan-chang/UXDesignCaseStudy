@@ -15,7 +15,7 @@
             <ul>
                 <li class="logo"><i class="fas fa-logo"></i> <img class="logo" src="img/icon/lightbulb.png" ></li>
                 <li ><a href="#"><i class="fas fa-home"></i>Project Proposal</a></li>
-                <li id="summary"><a href="#"><i class="fas fa-user"></i>Excecutive Summary</a></li>
+                <li id="summary"><a href="#"><i class="fas fa-user"></i>Executive Summary</a></li>
                 <li id="description"><a href="#"><i class="fas fa-address-card"></i>Description</a></li>
                 <li id="test"><a href="#"><i class="fas fa-project-diagram"></i>Develop and Test</a></li>
                 <li id="analysis"><a href="#"><i class="fas fa-blog"></i>Competitor Analysis</a></li>
@@ -29,7 +29,7 @@
                 <a onclick="location.href='./proposal.html';">Project Proposal</a>
                 <a onclick="location.href='./index.html';">Home</a>
             </div>
-            <div class="header">
+            <div id="header" class="header">
                 <h1>Executive Summary</h1>
             </div>  
             <div class="info">
@@ -50,10 +50,14 @@
 
         function ChangeDescription() {
             var pageInfo = document.getElementById("info");
-            pageInfo.textContent = "People share the same experience of standing in front of the shelf without the product on their shopping list, and they sometimes cannot find the product in several grocery stores. Most customers spend lots of time collecting all items they want and comparing the price in different places which make grocery shopping a time consuming work. \n\n To solve this problem, we first clarified user need: \
-                \n1 .Product availability \n To know the product availability can prevent unnecessary attempts for customers finding nothing in the store. \n 2. Product price \n When the product is not just available in one place, it is good for customers to buy it with the lowest price. \
-                \n3. Delivery service \
-                \nIt is good for customers to get all products in the convenient way they want, including curbside pickup, in-store pickup or delivery.";
+            pageInfo.innerHTML = "People share the same experience of standing in front of the shelf without the product on their shopping list, and they sometimes cannot find the product in several grocery stores. Most customers spend lots of time collecting all items they want and comparing the price in different places which make grocery shopping a time consuming work. To solve this problem, we first clarified user need: <br>\n" +
+                "1 .Product availability<br>" +
+                "To know the product availability can prevent unnecessary attempts for customers finding nothing in the store.<br>" +
+                "2. Product price <br>" +
+                "When the product is not just available in one place, it is good for customers to buy it with the lowest price.<br>" +
+                "    3. Delivery service<br>" +
+                "    It is good for customers to get all products in the convenient way they want, including curbside pickup, in-store pickup or delivery.";
+            ChangeHeader("<h1>Description</h1>")
         }
 
         function ChangeTest() {
@@ -61,12 +65,21 @@
             pageInfo.textContent = "The developing stages will start with sketches and then move to higher-fidelity prototypes. The design of user interfaces will mostly focus on usability, accessibility, privacy, security, robustness, and speed. User interface should be easy to understand and use for the users. One of the goals is to don't make users go through a maze to find a product they have in mind. Our system will be required to create an account using a verified email address therefore accounts information will be kept confidential and secure. Moreover, the system should work all the time in any circumstance. If there is a failure, user information must be secure.\
 The idea in early stages is that the system will be implemented as a phone application for both IOS and Android. The idea is to notify the user as soon as the item is available and can be used at any circumstance. Thus, as developers, we are thinking of creating a phone application. \
 There is a time constraint that we are facing which is eight weeks. During this time, we are going to have user interaction with potential users for the system. The data we are going to collect will have a major impact on developing the user interface. Also, when there is a version of a prototype available for the user interface, we are going to interact with users to get feedback.   Finally, the final product will be at prototype development.";
+            ChangeHeader("<h1>Develop and Test</h1>")
         }
 
         function ChangeAnalysis() {
+            //todo
             var pageInfo = document.getElementById("info");
             pageInfo.textContent = "Need to update";
+            ChangeHeader("<h1>Competitor Analysis</h1>")
         }
+
+        function ChangeHeader(name) {
+            var header = document.getElementById("header");
+            header.innerHTML = name
+        }
+
         document.getElementById("summary").addEventListener("click", ChangeSummary);
         document.getElementById("description").addEventListener("click", ChangeDescription);
         document.getElementById("test").addEventListener("click", ChangeTest);

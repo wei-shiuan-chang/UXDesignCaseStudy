@@ -2,9 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="propsalStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
+<div class="wrapper">
+    <div class="sidebar">
+        <!-- <img class="logo" src="img/icon/lightbulb.png" > -->
+        <ul>
+            <li class="logo"><i class="fas fa-logo"></i> <img class="logo" src="img/icon/target.png" ></li>
+            <li ><a href="#"><i class="fas fa-home"></i>User Research & Personas</a></li>
+            <li id="summary"><a href="#"><i class="fas fa-user"></i>Executive Summary</a></li>
+            <li id="research_question"><a href="#"><i class="fas fa-address-card"></i>Research Question</a></li>
+            <li id="research_goal"><a href="#"><i class="fas fa-project-diagram"></i>Research Goal</a></li>
+            <li id="methods_findings"><a href="#"><i class="fas fa-user"></i>Methods & Findings</a></li>
+            <li id="personas"><a href="#"><i class="fas fa-address-card"></i>Personas</a></li>
+            <li id="appendix"><a href="#"><i class="fas fa-project-diagram"></i>Appendix</a></li>
+        </ul>
+
+    </div>
+    <div class="main_content">
+        <div class="topnav">
+            <a onclick="location.href='./DesignAndEvaluation.html';">Design & Evaluation</a>
+            <a onclick="location.href='./userResearchAndPersonas.html';">User Research & Personas</a>
+            <a onclick="location.href='./proposal.html';">Project Proposal</a>
+            <a onclick="location.href='./index.html';">Home</a>
+        </div>
+        <div id="header" class="header">
+            <h1>Executive Summary</h1>
+        </div>
+        <div class="info">
+            <p id="info">
+                This project involved the design and construction of a system to help people who are busy to do grocery shopping very fast and easy. The primary aim of the task was to collect data to see how users will do grocery shopping. Initially, team members brainstormed who our target users were and created an interview protocol of questions to follow. Following the development of the interview protocol, each member of the team interviewed three separate users’ who matched our target user. After interviewing, as a team we created an affinity diagram to find our discoveries. The significant themes that we found in our finding was that most of the users had a list of what to purchase and checked the price of each item based on their memory, which they bought last time. This report will outline the research question and goal, result of our data, and personas that represent our user archetypes.    </div>
+</div>
+
+<script>
+    function ChangeSummary() {
+        var pageInfo = document.getElementById("info");
+        pageInfo.textContent = "This project involved the design and construction of a system to help people who are busy to do grocery shopping very fast and easy. The primary aim of the task was to collect data to see how users will do grocery shopping. Initially, team members brainstormed who our target users were and created an interview protocol of questions to follow. Following the development of the interview protocol, each member of the team interviewed three separate users’ who matched our target user. After interviewing, as a team we created an affinity diagram to find our discoveries. The significant themes that we found in our finding was that most of the users had a list of what to purchase and checked the price of each item based on their memory, which they bought last time. This report will outline the research question and goal, result of our data, and personas that represent our user archetypes.";
+    }
+
+    function ChangeResearch_question() {
+        var pageInfo = document.getElementById("info");
+        pageInfo.innerHTML = "<ul><li>How do users make a decision to do grocery shopping?\n</li>" +
+            "<li>Their process of choosing stores and purchasing a product? \n</li>" +
+            "<li>What is the ratio of fresh and daily necessities purchased by users each time?</li></ul>";
+        ChangeHeader("<h1>Research Question</h1>")
+    }
+
+    function ChangeResearch_goal() {
+        var pageInfo = document.getElementById("info");
+        pageInfo.textContent = "Our goal is to understand and learn the experience of a user's grocery shopping. The conversation will be adjusted to the particle interviewee. But the goal is to gain information about how they will do grocery shopping and what they will do in different situations. The situation we are interested in is for example when the price of a product is expensive, when the product is out of stock, and what factor will affect their decision making of choosing a product.";
+        ChangeHeader("<h1>Research Goal</h1>")
+    }
+
+    function ChangeMethods_findings() {
+        var pageInfo = document.getElementById("info");
+        // todo add text
+        pageInfo.textContent = "Need to update";
+        ChangeHeader("<h1>Methods & Findings</h1>")
+    }
+    function ChangePersonas() {
+        var pageInfo = document.getElementById("info");
+        // todo add text
+        pageInfo.textContent = "Need to update";
+        ChangeHeader("<h1>Personas</h1>")
+    }
+    function ChangeAppendix() {
+        var pageInfo = document.getElementById("info");
+        // todo add text
+        pageInfo.textContent = "Need to update";
+        ChangeHeader("<h1>Appendix</h1>")
+    }
+    function ChangeHeader(name) {
+        var header = document.getElementById("header");
+        header.innerHTML = name
+    }
+
+    document.getElementById("summary").addEventListener("click", ChangeSummary);
+    document.getElementById("research_question").addEventListener("click", ChangeResearch_question);
+    document.getElementById("research_goal").addEventListener("click", ChangeResearch_goal);
+    document.getElementById("methods_findings").addEventListener("click", ChangeMethods_findings);
+    document.getElementById("personas").addEventListener("click", ChangePersonas);
+    document.getElementById("appendix").addEventListener("click", ChangeAppendix);
+</script>
 
 </body>
 </html>
