@@ -7,13 +7,13 @@ function ChangeSummary() {
 
 function ChangeDescription() {
     var pageInfo = document.getElementById("info");
-    pageInfo.innerHTML = "People share the same experience of standing in front of the shelf without the product on their shopping list, and they sometimes cannot find the product in several grocery stores. Most customers spend lots of time collecting all items they want and comparing the price in different places which make grocery shopping a time consuming work. To solve this problem, we first clarified user need: <br>\n" +
-        "1 .Product availability<br>" +
-        "To know the product availability can prevent unnecessary attempts for customers finding nothing in the store.<br>" +
-        "2. Product price <br>" +
-        "When the product is not just available in one place, it is good for customers to buy it with the lowest price.<br>" +
-        "    3. Delivery service<br>" +
-        "    It is good for customers to get all products in the convenient way they want, including curbside pickup, in-store pickup or delivery.";
+    pageInfo.innerHTML = "People share the same experience of standing in front of the shelf without the product on their shopping list, and they sometimes cannot find the product in several grocery stores. Most customers spend lots of time collecting all items they want and comparing the price in different places which make grocery shopping a time consuming work. To solve this problem, we first clarified user need: <br>\n \
+    <br>1. Product availability<br> \
+    &emsp;To know the product availability can prevent unnecessary attempts for customers finding nothing in the store.<br> \
+        <br>2. Product price <br> \
+    &emsp;When the product is not just available in one place, it is good for customers to buy it with the lowest price.<br> \
+        <br>3. Delivery service<br> \
+    &emsp;It is good for customers to get all products in the convenient way they want, including curbside pickup, in-store pickup or delivery.";
     ChangeHeader("<h1>Description</h1>")
 }
 
@@ -26,12 +26,8 @@ function ChangeTest() {
 }
 
 function ChangeAnalysis() {
-    //todo
-    // var divInfo = document.getElementsByClassName("info");
-    // divInfo.innerHTML = "<h2>tewstigggg</h2>";
     var pageInfo = document.getElementById("info");
     pageInfo.innerHTML = '<div style="padding-left: 250px" class="container"><div class="row" justify-content-center><div class="col"><img style="padding-left:50px; padding-top:50px;" src="img/icon/HotStockLogo.png" height="200" width="200"></div><div style="padding-top:150px; font-size:40px" class="col">HotStock</div></div><div class="row" justify-content-center><div class="col"><img style="padding-left:20px; padding-top:50px;" src="img/icon/AmazonFreshLogo.png" height="200" width="230" ></div><div style="padding-top:100px; font-size:40px" class="col">Amazon Fresh</div></div><div class="row" justify-content-center align-items-center><div class="col"><img style="padding-left:50px; padding-top:50px;" src="img/icon/InstacartLogo.png" height="200" width="200"></div><div style="padding-top:100px; font-size:40px" class="col" align-self-center>InstaCart</div></div></div>';
-    // pageInfo.textContent = "Need to update";
     ChangeHeader("<h1>Competitor Analysis</h1>")
 }
 
