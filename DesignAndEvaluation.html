@@ -27,48 +27,42 @@
             <a onclick="location.href='./proposal.html';">Project Proposal</a>
             <a onclick="location.href='./index.html';">Home</a>
         </div>
-        <div id="header" class="header">
+        <div id="header" class="header2">
             <h1>User Evaluation</h1>
+            <div class="row justify-content-center align-items-center">
+                <div class="col">
+                    Planning
+                </div>
+                <div class="col">
+                    Analyzation
+                </div>
+                <div class="col">
+                    Modifcation 
+                </div>
+            </div>
         </div>
         <div class="info">
             <p id="info">
-                People all go grocery shopping. The average time Americans spend on groceries is about 60 hours per year. Many shoppers want stores to share the inventory information, like availability and price. Also, grocery habits have dramatically changed since the pandemic. More and more people start shopping online than drive to the grocery store. Our group proposes to design a new system that can provide product availability, product price, and delivery service to people with a better shopping experience.
+                The following lists are some tasks we created to be used during our evaluations. <br>
+                <br>
+                <strong>Broad reflective task</strong> <br>
+                1. (On “details of a specific item page”) Could you take a look at the page and tell me what you can do on this page? <br>
+                2. (On “Shopping cart” screens) Could you take a look at the page and tell me what is the purpose of this page?<br>
+                <br>
+                <strong>Specific goal-oriented task</strong> <br> 
+                1. Imagine that you want to find a fruit that has a discount now and add it to the list.<br> 
+                2. Find out the quickest way to purchase all items in your shopping bag.<br> 
+                <br> 
+                <strong>Questions</strong><br>
+                1. What did you like about the system?<br>
+                2. What do you think could have been improved?<br>
+                3. Are there any features you think that can be added to the system?<br>
             </p>
         </div>
     </div>
 </div>
 
-<script>
-    function ChangeUser_evaluation() {
-        var pageInfo = document.getElementById("info");
-        pageInfo.textContent = "Need to update";
-        ChangeHeader("<h1>User Evaluation</h1>")
-    }
-
-    function ChangeHeuristic_evaluation() {
-        // todo
-        var pageInfo = document.getElementById("info");
-        pageInfo.textContent = "Need to update";
-        ChangeHeader("<h1>Heuristic Evaluation</h1>")
-    }
-
-
-    function ChangeMockup() {
-        // todo
-        var pageInfo = document.getElementById("info");
-        pageInfo.textContent = "Need to update";
-        ChangeHeader("<h1>High-Fidelity Mockup</h1>")
-    }
-
-    function ChangeHeader(name) {
-        var header = document.getElementById("header");
-        header.innerHTML = name
-    }
-    document.getElementById("user_evaluation").addEventListener("click", ChangeUser_evaluation);
-    document.getElementById("heuristic_evaluation").addEventListener("click", ChangeHeuristic_evaluation);
-    document.getElementById("mockup").addEventListener("click", ChangeMockup);
-
-</script>
+<script src="evaluation.js"></script>
 
 </body>
 </html>

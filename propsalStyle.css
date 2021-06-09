@@ -119,6 +119,29 @@ body{
   text-align: center;
 }
 
+.wrapper .main_content .header2{
+  height: 30vh;
+  padding-top: 10%;
+  background: #fff;
+  color: #020202;
+  /* border-bottom: 1px solid #e0e4e8; */
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.wrapper .main_content .header2 .row{
+  border: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .header2 .row .col{
+  border: 1px solid #e0e4e8;
+  background-color: gray;
+  
+}
+
+
+
 .wrapper .main_content .info{
   margin: 50px;
   color: #717171;
