@@ -1,6 +1,7 @@
 function ChangeSummary() {
     var pageInfo = document.getElementById("info");
     pageInfo.textContent = "People all go grocery shopping. The average time Americans spend on groceries is about 60 hours per year. Many shoppers want stores to share the inventory information, like availability and price. Also, grocery habits have dramatically changed since the pandemic. More and more people start shopping online than drive to the grocery store. Our group proposes to design a new system that can provide product availability, product price, and delivery service to people with a better shopping experience.";
+    ChangeHeader("<h1>Executive Summary</h1>")
 }
 
 function ChangeDescription() {
