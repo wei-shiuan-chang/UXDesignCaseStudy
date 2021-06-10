@@ -19,7 +19,7 @@
  - Appropiate headings and paragraph text
     - H1, H2, H3, H4, H5, H6
     - p and a tags
- - Permitted Attirbutes
+ - Permitted Attributes
     - ID
     - Class
     - Align
@@ -27,15 +27,16 @@
 
 ## CSS Content
   - Padding and Margins to ident content
-  - Modify coloumn boarder 
+  - Modify column boarder 
   - Changing Background color and Image
   - Used different fonts (from googleapis)
 
 ## Advanced Content
-  - Created table with multiple coloumns and rows
+  - Created tables with multiple columns and rows
   - Navigation bar and sidebar
-  - Bootstrap (navBar and Grid lyout)
+  - Bootstrap (navBar and Grid layout)
 
 ## Resources
   - https://getbootstrap.com/docs/5.0/getting-started/introduction/
   - https://www.youtube.com/watch?v=qmPmwdshCMw  
+  - Icons from [Flaticon](https://www.flaticon.com/)
