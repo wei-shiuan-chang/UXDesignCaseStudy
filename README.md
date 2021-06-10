@@ -2,10 +2,10 @@
 
 ---
 ### Table of Content
--[HTML Content](#html-content)
--[CSS Content](#css-content)
--[Advanced Content](#advanced-content)
--[Resources](#resources)
+- [HTML Content](#html-content)
+- [CSS Content](#css-content)
+- [Advanced Content](#advanced-content)
+- [Resources](#resources)
 ---
 
 ## HTML Content
