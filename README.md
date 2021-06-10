@@ -2,12 +2,18 @@
 
 ---
 ### Table of Content
+- [How to run?](#how-to-run)
 - [HTML Content](#html-content)
 - [CSS Content](#css-content)
 - [Advanced Content](#advanced-content)
 - [Resources](#resources)
 ---
 
+## How to run?
+ - First Clone or download the zip file.
+ - Navigate to the folder and double clicked the index.html
+ - It will open in your favorite browser
+ 
 ## HTML Content
  - Image with with descriptive alt attribute
  - Appropiate headings and paragraph text
