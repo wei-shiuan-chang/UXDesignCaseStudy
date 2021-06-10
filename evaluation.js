@@ -20,13 +20,7 @@ function ChangeUser_evaluation() {
 function ChangeHeuristic_evaluation() {
     var pageInfo = document.getElementById("info");
     pageInfo.innerHTML = '<p>We use <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Nielsen\'s 10 Heuristics \
-    </a> as our tool to do the heuristic evaluation.</p><div style="background-color:gray; color:black; border:1px solid rgb(32, 31, 31); \
-    margin-bottom: 1px; layout" class="row my-row  justify-content-center align-items-center"><div style="" class="col" width="20px">Visibility\
-     of system status</div><div class="col">Match between system and the real world</div><div class="col">User control and freedom</div><div\
-      class="col">Consistency and standards</div><div class="col">Error prevention</div></div><div style="background-color:gray; border: 1px;color:black;\
-       border:1px solid rgb(32, 31, 31);" class="row my-row  justify-content-center align-items-center"><div class="col">Recognition rather than recall</div>\
-       <div class="col">Flexibility and efficiency of use</div><div class="col">Aesthetic and minimalist design</div><div class="col">Help users recognize, diagnose, and recover from errors</div><div class="col">Help\
-        and documentation</div></div>';
+    </a> as our tool to do the heuristic evaluation.</p><div class="row my-row  justify-content-center align-items-center" ><embed height="500px" width="300px"  src="https://media.nngroup.com/media/articles/attachments/Heuristic_Summary1_Letter-compressed.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit"></embed></div>';
     ChangeHeader("<h1>Heuristic Evaluation</h1>")
 }
 
@@ -34,7 +28,7 @@ function ChangeHeuristic_evaluation() {
 function ChangeMockup() {
     // todo
     var pageInfo = document.getElementById("info");
-    pageInfo.innerHTML = '<p>To look at the high-fidelity mockup please click <a href="https://www.figma.com/proto/Up7DcX5whUjZ0pi5dEKPAd/Revision-for-user-evaluation?node-id=1%3A159&scaling=min-zoom&page-id=0%3A1">here</a></p>';
+    pageInfo.innerHTML = '<p>If it doesn\'t load successfully, please click <a href="https://www.figma.com/proto/Up7DcX5whUjZ0pi5dEKPAd/Revision-for-user-evaluation?node-id=1%3A159&scaling=min-zoom&page-id=0%3A1">here</a></p><div class="row my-row  justify-content-center align-items-center" ><iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FUp7DcX5whUjZ0pi5dEKPAd%2FRevision-for-user-evaluation%3Fnode-id%3D1%253A159%26scaling%3Dcontain%26page-id%3D0%253A1" allowfullscreen></iframe></div>';
     ChangeHeader("<h1>High-Fidelity Mockup</h1>")
 }
 
